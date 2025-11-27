@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QA Portfolio - Omar Musab Idrees</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-header">
+    <h1 class="name">QA Portfolio</h1>
+    <p class="title">Manual QA Testing • Test Cases • Bug Reports</p>
+    <a href="index.html" class="btn" style="margin-top: 10px;">← Back to Main Portfolio</a>
+  </header>
+
+  <main class="container">
+
+    <!-- Overview -->
+    <section class="section">
+      <h2>Overview</h2>
+      <p>
+        This QA portfolio contains the full documentation created during my manual QA training and practice.
+        It includes structured Test Cases, detailed Bug Reports, and notes from testing real websites
+        (e-commerce and a government complaint system). The goal is to show how I think as a QA tester,
+        how I design test scenarios, and how I document issues clearly for developers.
+      </p>
+    </section>
+
+    <!-- Training Summary -->
+    <section class="section">
+      <h2>Training Summary</h2>
+      <ul class="clean">
+        <li><strong>Day 1:</strong> User vs QA mindset, features analysis, test scenarios, equivalence classes, boundary values, test data design.</li>
+        <li><strong>Day 2:</strong> Wrote 12 structured Test Cases for Login (web), using formal QA format (ID, preconditions, steps, expected result).</li>
+        <li><strong>Day 3:</strong> Wrote 14 Bug Reports for e-commerce and government websites, with severity/priority classification.</li>
+        <li><strong>Day 4:</strong> Integration into portfolio, CV update, and documentation cleanup.</li>
+      </ul>
+    </section>
+
+    <!-- Test Cases -->
+    <section class="section">
+      <h2>Test Cases (Login Page)</h2>
+      <p class="muted">
+        All Test Cases below follow the same structure: ID, Title, Preconditions, Steps, Expected Result.
+        Actual Result and Status are left empty for real execution in a testing environment.
+      </p>
+
+      <!-- TC-001 -->
+      <details class="qa-block" open>
+        <summary><strong>TC-001 – Attempt login with empty fields</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Leave the email field empty.</li>
+            <li>Leave the password field empty.</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System displays a clear error message requesting the user to enter both email and password.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-002 -->
+      <details class="qa-block">
+        <summary><strong>TC-002 – Login with valid email and invalid password</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page and has an existing account.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid registered email.</li>
+            <li>Enter an incorrect password.</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System displays an error message indicating that the password or credentials are incorrect.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-003 -->
+      <details class="qa-block">
+        <summary><strong>TC-003 – Login with invalid email format</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter an invalid email format (e.g., "omar@", "omar.com").</li>
+            <li>Enter a valid password.</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System shows a validation error indicating that the email format is invalid.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-004 -->
+      <details class="qa-block">
+        <summary><strong>TC-004 – Login with valid credentials (success case)</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User has an active account and is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid email.</li>
+            <li>Enter the correct password.</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> User successfully logs in and is redirected to the home/dashboard page.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-005 -->
+      <details class="qa-block">
+        <summary><strong>TC-005 – Check "Forgot Password" link</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Click the "Forgot Password" link.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System redirects the user to the password reset page or flow.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-006 -->
+      <details class="qa-block">
+        <summary><strong>TC-006 – Check "Create Account" link</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Click the "Create Account" or "Sign Up" link.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System opens the sign-up / account creation page.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-007 -->
+      <details class="qa-block">
+        <summary><strong>TC-007 – Login with extremely long email input</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter an email address longer than 80–100 characters.</li>
+            <li>Enter a valid password.</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System validates email length and shows a proper error or prevents overlong input.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-008 -->
+      <details class="qa-block">
+        <summary><strong>TC-008 – Login with empty password only</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid email.</li>
+            <li>Leave the password field empty.</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System shows "Password is required" or similar error message.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-009 -->
+      <details class="qa-block">
+        <summary><strong>TC-009 – Login button disabled state behavior</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> Login form uses a disabled state for the button.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Observe the Login button with empty fields.</li>
+            <li>Enter valid email and password.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Login button is disabled with invalid/empty fields and becomes enabled only when fields are valid.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-010 -->
+      <details class="qa-block">
+        <summary><strong>TC-010 – Password visibility toggle</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> Password field has a visibility (eye) icon.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid password.</li>
+            <li>Click the eye (visibility) icon.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Password switches between hidden (dots) and visible text.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-011 -->
+      <details class="qa-block">
+        <summary><strong>TC-011 – Invalid characters in password (security test)</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User is on the Login page.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid email.</li>
+            <li>Enter special/code-like input in password (e.g., "&lt;script&gt;").</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System safely handles input and shows validation error, without executing any script or crashing.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+
+      <!-- TC-012 -->
+      <details class="qa-block">
+        <summary><strong>TC-012 – Session handling after successful login</strong></summary>
+        <div>
+          <p><strong>Preconditions:</strong> User has successfully logged in.</p>
+          <p><strong>Steps:</strong></p>
+          <ol>
+            <li>Login with valid credentials.</li>
+            <li>Refresh the page.</li>
+            <li>Try to access another protected page.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> User remains logged in with a valid session; no need to log in again.</p>
+          <p><strong>Actual Result:</strong> —</p>
+          <p><strong>Status:</strong> —</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Bug Reports -->
+    <section class="section">
+      <h2>Bug Reports (Web & Mobile)</h2>
+      <p class="muted">
+        Each Bug Report includes clear title, environment, steps to reproduce, expected vs actual result,
+        and severity/priority to help developers understand impact and fix order.
+      </p>
+
+      <!-- BUG-001 -->
+      <details class="qa-block" open>
+        <summary><strong>BUG-001 – "Forgot Password" button does not work</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Chrome browser</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Click the "Forgot Password" button/link.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System opens the password reset page or sends the user to a reset flow.</p>
+          <p><strong>Actual Result:</strong> Nothing happens; the button does not respond.</p>
+          <p><strong>Severity:</strong> Medium</p>
+          <p><strong>Priority:</strong> Medium</p>
+        </div>
+      </details>
+
+      <!-- BUG-002 -->
+      <details class="qa-block">
+        <summary><strong>BUG-002 – Login button stays disabled with valid input</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Brave browser</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid email.</li>
+            <li>Enter a valid password.</li>
+            <li>Observe the Login button state.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Login button becomes enabled when valid email and password are entered.</p>
+          <p><strong>Actual Result:</strong> Login button remains disabled even with valid input.</p>
+          <p><strong>Severity:</strong> Critical</p>
+          <p><strong>Priority:</strong> High</p>
+        </div>
+      </details>
+
+      <!-- BUG-003 -->
+      <details class="qa-block">
+        <summary><strong>BUG-003 – No error message for invalid email format</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Android / Mobile</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page on Android mobile.</li>
+            <li>Enter an invalid email format (e.g., "omar@", "omar.com").</li>
+            <li>Enter a valid password.</li>
+            <li>Tap the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System displays an error message indicating the email format is invalid.</p>
+          <p><strong>Actual Result:</strong> No error message is displayed; the system does not validate the email format.</p>
+          <p><strong>Severity:</strong> Medium</p>
+          <p><strong>Priority:</strong> Medium</p>
+        </div>
+      </details>
+
+      <!-- BUG-004 -->
+      <details class="qa-block">
+        <summary><strong>BUG-004 – Password field accepts input shorter than minimum length</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Chrome browser</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid email.</li>
+            <li>Enter a password shorter than the required minimum (e.g., 2–3 characters).</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System should show validation error about minimum password length.</p>
+          <p><strong>Actual Result:</strong> Login request is submitted without any validation error.</p>
+          <p><strong>Severity:</strong> Major</p>
+          <p><strong>Priority:</strong> High</p>
+        </div>
+      </details>
+
+      <!-- BUG-005 -->
+      <details class="qa-block">
+        <summary><strong>BUG-005 – "Remember Me" checkbox does not preserve login session</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 11 / Firefox</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter valid email and password.</li>
+            <li>Check the "Remember Me" option.</li>
+            <li>Login successfully.</li>
+            <li>Close the browser and reopen the website.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> User should remain logged in and not be asked to log in again.</p>
+          <p><strong>Actual Result:</strong> User is logged out and must log in again.</p>
+          <p><strong>Severity:</strong> Major</p>
+          <p><strong>Priority:</strong> Medium</p>
+        </div>
+      </details>
+
+      <!-- BUG-006 -->
+      <details class="qa-block">
+        <summary><strong>BUG-006 – Login page takes too long to load</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Edge browser</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the browser.</li>
+            <li>Navigate to the Login page.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Login page should load within 1–2 seconds.</p>
+          <p><strong>Actual Result:</strong> Login page takes around 5–7 seconds to fully load.</p>
+          <p><strong>Severity:</strong> Minor</p>
+          <p><strong>Priority:</strong> Medium</p>
+        </div>
+      </details>
+
+      <!-- BUG-007 -->
+      <details class="qa-block">
+        <summary><strong>BUG-007 – Password visibility toggle does not change visibility</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Android / Chrome mobile</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page on Android.</li>
+            <li>Enter a password.</li>
+            <li>Tap the eye (visibility) icon.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Password should toggle between visible and hidden states.</p>
+          <p><strong>Actual Result:</strong> Password remains hidden; icon does not function.</p>
+          <p><strong>Severity:</strong> Minor</p>
+          <p><strong>Priority:</strong> Medium</p>
+        </div>
+      </details>
+
+      <!-- BUG-008 -->
+      <details class="qa-block">
+        <summary><strong>BUG-008 – Email field with special characters crashes or freezes page</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Chrome browser</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter only special characters in the email field (e.g., "%$#@!").</li>
+            <li>Enter a valid password.</li>
+            <li>Click the "Login" button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System should show an "Invalid email format" error.</p>
+          <p><strong>Actual Result:</strong> Page crashes or becomes unresponsive.</p>
+          <p><strong>Severity:</strong> Critical</p>
+          <p><strong>Priority:</strong> High</p>
+        </div>
+      </details>
+
+      <!-- BUG-009 -->
+      <details class="qa-block">
+        <summary><strong>BUG-009 – Phone number fields accept alphabetic characters (Gov portal)</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Chrome browser</p>
+          <p><strong>Page:</strong> Government Complaint System – Create New Account → Personal Information section</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the "Create New Account" page.</li>
+            <li>Scroll to the "Personal Information" form.</li>
+            <li>Enter alphabetic characters into "Mobile Number" and "Phone Number" fields.</li>
+            <li>Click "Next" or proceed in the form.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System should restrict input to digits only or show validation error messages.</p>
+          <p><strong>Actual Result:</strong> System accepts alphabetic characters without any validation and allows user to proceed.</p>
+          <p><strong>Severity:</strong> Major</p>
+          <p><strong>Priority:</strong> High</p>
+        </div>
+      </details>
+
+      <!-- BUG-010 -->
+      <details class="qa-block">
+        <summary><strong>BUG-010 – Search returns no results for existing products</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Chrome browser (e-commerce site)</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the home page.</li>
+            <li>Type a known existing product (e.g., "iPhone") in the search bar.</li>
+            <li>Press Enter or click the Search button.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> A list of relevant products matching the keyword should be shown.</p>
+          <p><strong>Actual Result:</strong> "No results found" message appears although the product exists.</p>
+          <p><strong>Severity:</strong> Major</p>
+          <p><strong>Priority:</strong> High</p>
+        </div>
+      </details>
+
+      <!-- BUG-011 -->
+      <details class="qa-block">
+        <summary><strong>BUG-011 – Cart total price is calculated incorrectly</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Chrome browser (e-commerce site)</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Add Product A to cart (e.g., 50).</li>
+            <li>Add Product B to cart (e.g., 30).</li>
+            <li>Open the Cart page.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Cart total should show 80.</p>
+          <p><strong>Actual Result:</strong> Cart total displays an incorrect value.</p>
+          <p><strong>Severity:</strong> Critical</p>
+          <p><strong>Priority:</strong> High</p>
+        </div>
+      </details>
+
+      <!-- BUG-012 -->
+      <details class="qa-block">
+        <summary><strong>BUG-012 – Reviews section does not load on product page</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Android / Chrome mobile (e-commerce site)</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open any product page that has customer reviews.</li>
+            <li>Scroll down to the "Customer Reviews" section.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Reviews should load and be displayed.</p>
+          <p><strong>Actual Result:</strong> Reviews section keeps loading or remains empty with no message.</p>
+          <p><strong>Severity:</strong> Medium</p>
+          <p><strong>Priority:</strong> Medium</p>
+        </div>
+      </details>
+
+      <!-- BUG-013 -->
+      <details class="qa-block">
+        <summary><strong>BUG-013 – No error message for wrong password</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 11 / Edge browser</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open the Login page.</li>
+            <li>Enter a valid email.</li>
+            <li>Enter an incorrect password.</li>
+            <li>Click "Login".</li>
+          </ol>
+          <p><strong>Expected Result:</strong> System shows an error message like "Incorrect email or password".</p>
+          <p><strong>Actual Result:</strong> Page refreshes or stays the same with no feedback.</p>
+          <p><strong>Severity:</strong> Major</p>
+          <p><strong>Priority:</strong> High</p>
+        </div>
+      </details>
+
+      <!-- BUG-014 -->
+      <details class="qa-block">
+        <summary><strong>BUG-014 – Price filter does not update product list</strong></summary>
+        <div>
+          <p><strong>Environment:</strong> Windows 10 / Firefox (e-commerce site)</p>
+          <p><strong>Steps to Reproduce:</strong></p>
+          <ol>
+            <li>Open any product category page.</li>
+            <li>Set a price range (e.g., 50–100) using the price filter.</li>
+            <li>Apply the filter.</li>
+          </ol>
+          <p><strong>Expected Result:</strong> Product list should display only items within the selected price range.</p>
+          <p><strong>Actual Result:</strong> Product list remains unchanged; items outside the range are still displayed.</p>
+          <p><strong>Severity:</strong> Major</p>
+          <p><strong>Priority:</strong> Medium</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Screenshots / Evidence -->
+    <section class="section">
+      <h2>Screenshots & Evidence</h2>
+      <p>
+        Screenshots are available for specific bugs, especially for the government complaint system
+        phone-number validation issue (BUG-009). They can be shared as part of a PDF report or upon request.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Omar Musab Idrees. QA Portfolio</p>
+  </footer>
+</body>
+</html>

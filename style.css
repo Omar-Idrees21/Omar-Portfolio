@@ -140,9 +140,46 @@ footer {
   padding: 20px;
   color: #777;
 }
+
 @media (max-width: 600px) {
   .profile-wrap {
     flex-direction: column;
     text-align: center;
   }
+}
+
+/* ==== QA PAGE BLOCKS (qa.html) ==== */
+
+.qa-block {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f3f6fa;
+  border: 1px solid #dde3ee;
+}
+
+.qa-block summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #1A5276;
+}
+
+.qa-block summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa-block summary::before {
+  content: "▸ ";
+  color: #777;
+}
+
+.qa-block[open] summary::before {
+  content: "▾ ";
+}
+
+/* optional: small spacing inside details content */
+.qa-block div {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
